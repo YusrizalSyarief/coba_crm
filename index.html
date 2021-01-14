@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="shortcut icon" href="img/logo-pixel.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <title>Latihan tailwind CSS 2</title>
+   <style>
+      body {
+         font-family: 'Poppins', sans-serif;
+      }
+
+      a {
+         text-decoration: none;
+      }
+   </style>
+</head>
+
+<body>
+   <div id="navbar" class="py-7 px-10 z-0 sticky top-0 bg-white">
+      <div class="grid grid-cols-2">
+         <div class="flex mr-12 md:mr-36 items-center lg:justify-around text-sm">
+            <a href="index.html"><img src="img/logo-pixel.png" alt="logo" class="w-8 h-8"></a>
+            <a href="" class="hover:text-gray-500 hidden lg:block">Home</a>
+            <a href="" class="hover:text-gray-500 hidden lg:block">UI Kits</a>
+            <a href="" class="hover:text-gray-500 hidden lg:block">Illustrations</a>
+            <a href="" class="hover:text-gray-500 hidden lg:block">Icon Sets</a>
+         </div>
+         <div class="mr-1 md:mr-4">
+            <button
+               class="bg-gray-100 hover:bg-purple-500 hover:text-white hidden lg:block tracking-wide rounded px-4 py-3 text-sm float-right focus:outline-none">Login
+               & Sign Up</button>
+            <button id="hamburgermenu"
+               class="bg-purple-500 rounded lg:hidden px-3 py-2 float-right focus:outline-none"><i
+                  class="fas fa-bars fill-current text-white"></i></button>
+         </div>
+      </div>
+   </div>
+   <div id="submenu" class="fixed px-10 pt-4 pl-12 grid grid-cols-1 gap-y-4 w-full hidden bg-white">
+      <a href="" class="hover:text-gray-500 block">Home</a>
+      <a href="" class="hover:text-gray-500 block">UI Kits</a>
+      <a href="" class="hover:text-gray-500 block">Illustrations</a>
+      <a href="" class="hover:text-gray-500 block">Icon Sets</a>
+      <button
+         class="bg-gray-100 hover:bg-purple-500 hover:text-white tracking-wide rounded mb-6 px-4 py-3 text-sm focus:outline-none">Login
+         & Sign Up</button>
+   </div>
+   <div id="jumbotron" class="bg-gray-50 text-center py-20 z-0">
+      <h1 class="text-4xl font-semibold tracking-wide">Download. Modify.</h1>
+      <h1 class="text-4xl mt-2 font-semibold tracking-wide">And You Just Finished The Work.</h1>
+      <p class="mt-4 text-gray-500">Menghemat waktu dan tenaga demi menyelesaikan</p>
+      <p class="text-gray-500">projek unggulan lebih cepat dan mudah</p>
+      <button class="bg-purple-500 tracking-wide rounded px-4 py-3 mt-8 text-white text-sm focus:outline-none">Explore
+         Pixel Now</button>
+   </div>
+   <div id="main-body" class="px-10 md:px-14 mb-20">
+      <div class="flex justify-center">
+         <button
+            class="hover:bg-purple-500 hover:text-white mr-2 tracking-wide rounded px-4 py-2 mt-8 text-xs md:text-sm focus:outline-none">New
+            Assets</button>
+         <button
+            class="hover:bg-purple-500 hover:text-white tracking-wide rounded px-4 py-2 mt-8 text-xs md:text-sm focus:outline-none">Special</button>
+         <button
+            class="hover:bg-purple-500 hover:text-white ml-2 tracking-wide rounded px-4 py-2 mt-8 text-xs md:text-sm focus:outline-none">Free
+            for You</button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-7 gap-y-8 mt-12">
+         <div class="">
+            <img src="img/aset1.png" class="rounded-lg">
+            <div class="grid grid-cols-2">
+               <div>
+                  <p class="text-lg mt-4 xl:text-xl">Berita News</p>
+                  <p class="text-gray-600">UI Kits</p>
+               </div>
+               <div class="mt-5 ">
+                  <div class="text-sm lg:text-base bg-yellow-200 ml-8 mr-2 p-2 text-center tracking-wide rounded">
+                     <p>FREEMIUM</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="">
+            <img src="img/aset2.png" class="rounded-lg">
+            <div class="grid grid-cols-2">
+               <div>
+                  <p class="text-lg mt-4 xl:text-xl">Berita News</p>
+                  <p class="text-gray-600">UI Kits</p>
+               </div>
+               <div class="mt-5 ">
+                  <div class="text-sm lg:text-base bg-green-200 ml-8 mr-2 p-2 text-center tracking-wide rounded">
+                     <p>FREEBIE</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="">
+            <img src="img/aset3.png" class="rounded-lg">
+            <div class="grid grid-cols-2">
+               <div>
+                  <p class="text-lg mt-4 xl:text-xl">Berita News</p>
+                  <p class="text-gray-600">UI Kits</p>
+               </div>
+               <div class="mt-5 ">
+                  <div class="text-sm lg:text-base bg-green-200 ml-8 mr-2 p-2 text-center tracking-wide rounded">
+                     <p>FREEBIE</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="">
+            <img src="img/aset4.png" class="rounded-lg">
+            <div class="grid grid-cols-2">
+               <div>
+                  <p class="text-lg mt-4 xl:text-xl">Berita News</p>
+                  <p class="text-gray-600">UI Kits</p>
+               </div>
+               <div class="mt-5 ">
+                  <div class="text-sm lg:text-base bg-green-200 ml-8 mr-2 p-2 text-center tracking-wide rounded">
+                     <p>FREEBIE</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="">
+            <img src="img/aset5.png" class="rounded-lg">
+            <div class="grid grid-cols-2">
+               <div>
+                  <p class="text-lg mt-4 xl:text-xl">Berita News</p>
+                  <p class="text-gray-600">UI Kits</p>
+               </div>
+               <div class="mt-5 ">
+                  <div class="text-sm lg:text-base bg-green-200 ml-8 mr-2 p-2 text-center tracking-wide rounded">
+                     <p>FREEBIE</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="">
+            <img src="img/aset6.png" class="rounded-lg">
+            <div class="grid grid-cols-2">
+               <div>
+                  <p class="text-lg mt-4 xl:text-xl">Berita News</p>
+                  <p class="text-gray-600">UI Kits</p>
+               </div>
+               <div class="mt-5 ">
+                  <div class="text-sm lg:text-base bg-yellow-200 ml-8 mr-2 p-2 text-center tracking-wide rounded">
+                     <p>FREEMIUM</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+      </div>
+   </div>
+
+   <!-- Start of HubSpot Embed Code -->
+   <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9185397.js"></script>
+   <!-- End of HubSpot Embed Code -->
+
+
+   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+   <script>
+      $("#hamburgermenu").click(function () {
+         if ($("#submenu").hasClass("block")) {
+            $("#submenu").removeClass("block");
+            $("#submenu").addClass("hidden");
+         } else {
+            $("#submenu").removeClass("hidden");
+            $("#submenu").addClass("block");
+         }
+
+      });
+   </script>
+</body>
+
+</html>
